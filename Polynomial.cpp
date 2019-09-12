@@ -25,7 +25,7 @@ int Polynomial::degree() {
     return mx;
 }
 
-string get_expression(Polynomial p) {
+string * get_expression(Polynomial p) {
     vector <char> s;
 
 
@@ -45,7 +45,10 @@ string get_expression(Polynomial p) {
         }
     }
     int l=s.size();
-    string *
-    return ;
+    string *pol= new string[l];
+    for (int i=0; i<l;i++){
+        pol[i]= s[i];
+    }
+    return pol;
 }
 
