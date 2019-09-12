@@ -52,3 +52,35 @@ string * get_expression(Polynomial p) {
     return pol;
 }
 
+
+Polynomial Polynomial::operator+(const Polynomial &p)  {
+    for (int i=0; i<p.m; i++) {
+        int l=0;
+        for (int j = 0; i < m; j++) {
+            if (p.v[i].second == v[j].second) {
+                v[j].first += p.v[i].first;
+                l=1;
+            }
+        }
+        if(!l) v.push_back(p.v[i]);
+    }
+    return *this;
+}
+
+
+Polynomial Polynomial::operator+(const int x) {
+    for(int i=0; i<=m; i++){
+       if(v[i].second==0) v[i].first +=x;
+    }
+
+    return *this;
+}
+
+
+Polynomial Polynomial::operator*(const int x) {
+    for(int i=0; i<=m; i++) v[i].first*=x;
+    return *this;
+}
+
+
+

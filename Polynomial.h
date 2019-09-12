@@ -16,7 +16,10 @@ public:
     Polynomial(const Polynomial & p);
     int degree();
     friend string * get_expression(Polynomial p);
-    Polynomial operator+ (const Polynomial & p) const;
+    Polynomial operator+ (const Polynomial & p) ;
+    Polynomial operator+ (const int x);
+
+    Polynomial operator * (const int x) ;
 
 
 
