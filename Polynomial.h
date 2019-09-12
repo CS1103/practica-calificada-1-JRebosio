@@ -8,8 +8,24 @@
 #include <vector>
 using namespace std;
 
+
 class Polynomial {
 
+public:
+    Polynomial( const vector<pair<double,int>> &u);
+    Polynomial(const Polynomial & p);
+    int degree();
+    friend string get_expression(Polynomial p);
+
+private:
+    int m;
+    vector<pair<double,int>> v;
+
+
+
+
 };
+
+
 
 #endif //POLINOMIO_POLINOMIO_H
