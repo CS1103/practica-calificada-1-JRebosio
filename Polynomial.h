@@ -23,6 +23,7 @@ public:
     Polynomial operator * (const Polynomial & p) ;
     Polynomial operator * (const int x) ;
 
+    Polynomial operator ^ (const int x) ;
 
 
 private:
