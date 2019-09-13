@@ -18,7 +18,7 @@ public:
     friend string get_expression(Polynomial p);
     Polynomial operator+ (const Polynomial & p) ;
     Polynomial operator+ (const int x);
-    Polynomial o
+
 
     Polynomial operator * (const Polynomial & p) ;
     Polynomial operator * (const int x) ;
