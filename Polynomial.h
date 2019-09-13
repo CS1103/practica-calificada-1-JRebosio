@@ -15,10 +15,12 @@ public:
     Polynomial( const vector<pair<double,int>> &u);
     Polynomial(const Polynomial & p);
     int degree();
-    friend string * get_expression(Polynomial p);
+    friend string get_expression(Polynomial p);
     Polynomial operator+ (const Polynomial & p) ;
     Polynomial operator+ (const int x);
+    Polynomial o
 
+    Polynomial operator * (const Polynomial & p) ;
     Polynomial operator * (const int x) ;
 
 

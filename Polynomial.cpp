@@ -25,7 +25,7 @@ int Polynomial::degree() {
     return mx;
 }
 
-string * get_expression(Polynomial p) {
+string get_expression(Polynomial p) {
     vector <char> s;
 
 
@@ -49,7 +49,7 @@ string * get_expression(Polynomial p) {
     for (int i=0; i<l;i++){
         pol[i]= s[i];
     }
-    return pol;
+    return (*pol);
 }
 
 
@@ -76,6 +76,14 @@ Polynomial Polynomial::operator+(const int x) {
     return *this;
 }
 
+
+Polynomial Polynomial::operator*(const Polynomial &p) {
+    for(int i=0; i<=p.m; i++)
+
+        p.v[i].first;
+
+    return *this;
+}
 
 Polynomial Polynomial::operator*(const int x) {
     for(int i=0; i<=m; i++) v[i].first*=x;
